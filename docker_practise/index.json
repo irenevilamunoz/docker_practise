@@ -5,18 +5,11 @@
   "time": "30",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "init.sh"
     }
   },
   "backend": {
     "imageid": "docker"
-  },
-  "environment": {
-    "uiinit": [
-      {
-        "command": "bash /root/init.sh",
-        "target": "host01"
-      }
-    ]
   }
 }
