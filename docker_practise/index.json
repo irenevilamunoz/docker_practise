@@ -1,1 +1,22 @@
-
+{
+  "title": "Docker Containers Practice",
+  "description": "Open Docker environment to practice container management.",
+  "difficulty": "Beginner",
+  "time": "30",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    }
+  },
+  "backend": {
+    "imageid": "docker"
+  },
+  "environment": {
+    "uiinit": [
+      {
+        "command": "bash /root/init.sh",
+        "target": "host01"
+      }
+    ]
+  }
+}
