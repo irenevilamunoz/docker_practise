@@ -23,11 +23,12 @@
       {
         "title": "Step 4 – Pull and Run Nginx from Docker Hub",
         "text": "step4.md"
+      },
+      {
+        "title": "Step 5 – Run Multiple Containers at the Same Time",
+        "text": "step5.md"
       }
-    ],
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
