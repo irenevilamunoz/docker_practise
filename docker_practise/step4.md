@@ -43,9 +43,3 @@ You should see the **Welcome to nginx!** page.
 ```bash
 docker stop ai5g_webserver
 ```{{exec}}
-
-## Delete the image (forced)
-
-```bash
-docker image rm -f ai5g_app
-```{{exec}}
