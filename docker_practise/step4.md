@@ -38,8 +38,10 @@ Click the link below to open the Nginx web page in your browser:
 
 You should see the **Welcome to nginx!** page.
 
-## Stop the container
+## Stop and remove the container
+
+Before moving to the next step, stop and remove the container so there are no port conflicts:
 
 ```bash
-docker stop ai5g_webserver
+docker stop ai5g_webserver && docker rm ai5g_webserver
 ```{{exec}}
