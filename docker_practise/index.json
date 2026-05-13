@@ -1,12 +1,32 @@
 {
   "title": "Docker Containers Practice",
-  "description": "Open Docker environment to practice container management.",
+  "description": "Learn to create and manage Docker containers: build images, run containers, and pull from Docker Hub.",
   "difficulty": "Beginner",
   "time": "30",
   "details": {
     "intro": {
-      "text": "intro.md",
-      "background": "init.sh"
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1 – Create the Python Application",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 – Create the Dockerfile",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 – Build and Run the Docker Image",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 – Pull and Run Nginx from Docker Hub",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
     }
   },
   "backend": {
