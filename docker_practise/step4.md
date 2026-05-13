@@ -1,24 +1,17 @@
-# Step 4 – Pull and Run Nginx from Docker Hub
-
-Docker Hub (https://hub.docker.com) is a public registry with thousands of ready-to-use images.
-
-## Pull the Nginx image
-
-```bash
 docker pull nginx:latest
-```{{exec}}
+`````````````{{exec}}
 
 ## Check that the image is available
 
-```bash
+````````````bash
 docker image ls
-```{{exec}}
+```````````{{exec}}
 
 ## Run the Nginx web server
 
-```bash
+``````````bash
 docker run -d --name ai5g_webserver -p 8080:80 nginx:latest
-```{{exec}}
+`````````{{exec}}
 
 - `-d` — runs in detached mode (background)
 - `--name ai5g_webserver` — gives the container a name
@@ -26,18 +19,26 @@ docker run -d --name ai5g_webserver -p 8080:80 nginx:latest
 
 ## Check the container is running
 
-```bash
+````````bash
 docker ps
-```{{exec}}
+```````{{exec}}
+
+## Visit the web server
+
+Click the link below to open the Nginx web page in your browser:
+
+[Access Web Server]({{TRAFFIC_HOST1_8080}})
+
+You should see the **Welcome to nginx!** page.
 
 ## Stop the container
 
-```bash
+``````bash
 docker stop ai5g_webserver
-```{{exec}}
+`````{{exec}}
 
 ## Delete the image (forced)
 
-```bash
+````bash
 docker image rm -f ai5g_app
 ```{{exec}}
